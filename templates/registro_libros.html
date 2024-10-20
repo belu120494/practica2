@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro de libros</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <h1>Registro de libros</h1>
+    <form action="/libro" method="POST">
+      Título: <input type="text" name="titulo" />
+      <br />
+      Autor: <input type="text" name="autor" />
+      <br />
+      Resumen: <input type="text" name="resumen" />
+      <br />
+      Medio:
+      <br />
+      <input type="radio" name="medio" value="Físico" />Físico <br />
+      <input type="radio" name="medio" value="Magnético" />Magnético <br />
+      <br />
+      <div class="bton">
+        <input type="submit" />
+      </div>
+    </form>
+  </body>
+</html>

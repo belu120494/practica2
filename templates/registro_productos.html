@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro de productos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <body>
+    <h1>Registro de productos</h1>
+    <form action="/producto" method="POST">
+      Producto: <input type="text" name="producto" />
+      <br />
+      Categoría:
+      <select name="categoria" id="categoria">
+        <option value="Alimentos">Alimentos</option>
+        <option value="Ropa">Ropa</option>
+        <option value="Muebles">Muebles</option>
+        <option value="Plantas">Plantas</option>
+        <option value="Artículos de cocina">Artículos de cocina</option>
+      </select>
+      <br>
+      Exitencia: <input type="text" name="exitencia" />
+      <br />
+      Precio: <input type="number" name="precio" />
+      <br />
+      <div class="bton">
+        <input type="submit" />
+      </div>
+    </form>
+  </body>
+</html>

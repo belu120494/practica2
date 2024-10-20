@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datos del usuario</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <h1>DATOS RECIBIDOS</h1>
+    <p>Los datos recibidos son:</p>
+    <p>Nombre: {{ nombre }}</p>
+    <p>Apellidos: {{ apellidos }}</p>
+    <p>Correo electrónico: {{ email }}</p>
+    <p>Contraseña: {{ password }}</p>
+    <div class="bton">
+      <p><a href="/">VOLVER</a></p>
+    </div>
+  </body>
+</html>

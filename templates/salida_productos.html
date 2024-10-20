@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datos del producto</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <h1>DATOS RECIBIDOS</h1>
+    <p>Los datos recibidos son:</p>
+    <p>Producto: {{ producto }}</p>
+    <p>Categoría: {{ categoria}}</p>
+    <p>Existencia: {{ existencia }}</p>
+    <p>Precio: Bs.- {{ precio }}</p>
+    <div class="bton">
+      <p><a href="/">VOLVER</a></p>
+    </div>
+  </body>
+</html>
